@@ -1,2 +1,7 @@
 export const ShowAlert = 'Show Alert'
 export const HideAlert = 'Hide Alert'
+export const ClearUsers = 'Clear Users'
+export const GetRepositories = 'Get Repositories'
+export const GetUser = 'Get User'
+export const SearchUsers = 'Search Users'
+export const SetLoading = 'Set Loading'
