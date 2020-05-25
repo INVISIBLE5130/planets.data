@@ -1,10 +1,10 @@
 import React, {Fragment, useContext} from "react";
 import {Search} from "../components/Search";
 import {Card} from "../components/Card";
-import {GithubContext} from "../context/github/githubContext";
+import {PlanetContext} from "../context/planet/planetContext";
 
 export const Home = () => {
-    const {loading, users} = useContext(GithubContext)
+    const {loading, data} = useContext(PlanetContext)
 
     return(
         <Fragment>
@@ -13,9 +13,9 @@ export const Home = () => {
             <div className="row">
                 {loading
                     ? <p className="text-center">Loading...</p>
-                    : users.map(user => (
-                        <div className="col-sm-4 mb-4" key={user.id}>
-                            <Card user={user}/>
+                    : data.map(element => (
+                        <div className="col-sm-4 mb-4" key={element.id}>
+                            <Card element={element}/>
                         </div>
                     ))
                 }

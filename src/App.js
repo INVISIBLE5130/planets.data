@@ -2,15 +2,15 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {Navbar} from "./components/Navbar";
 import {Home} from "./pages/Home";
-import {About} from "./pages/About";
-import {Profile} from "./pages/Profile";
+import {AboutApp} from "./pages/AboutApp";
+import {Planet} from "./pages/Planet";
 import {Alert} from "./components/Alert";
 import {AlertState} from "./context/alert/AlertState";
-import {GithubState} from "./context/github/githubState";
+import {PlanetState} from "./context/planet/planetState";
 
 function App() {
   return (
-      <GithubState>
+      <PlanetState>
           <AlertState>
               <BrowserRouter>
                   <Navbar/>
@@ -18,13 +18,13 @@ function App() {
                       <Alert alert={{text: 'Test alert'}}/>
                       <Switch>
                           <Route path="/" exact component={Home}/>
-                          <Route path="/about" exact component={About}/>
-                          <Route path="/profile/:name" exact component={Profile}/>
+                          <Route path="/about" exact component={AboutApp}/>
+                          <Route path="/planet/:name" exact component={Planet}/>
                       </Switch>
                   </div>
               </BrowserRouter>
           </AlertState>
-      </GithubState>
+      </PlanetState>
   );
 }
 

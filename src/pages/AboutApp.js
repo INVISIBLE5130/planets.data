@@ -1,6 +1,6 @@
 import React from "react";
 
-export const About = () => {
+export const AboutApp = () => {
     return(
         <div className="jumbotron">
             <div className="container">
