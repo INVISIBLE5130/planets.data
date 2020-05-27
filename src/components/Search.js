@@ -1,19 +1,24 @@
 import React, {useContext, useState} from "react";
 import {AlertContext} from "../context/alert/AlertContext";
+import {PlanetContext} from "../context/planet/planetContext";
 
 export const Search = () => {
     const [value, setValue] = useState('')
-    const {show} = useContext(AlertContext)
+    const alert = useContext(AlertContext)
+    const planet = useContext(PlanetContext)
 
     const onSubmit = event => {
         if (event.key !== 'Enter') {
             return
         }
 
+        planet.clearPlanets()
+
         if (value.trim()) {
-            console.log('Make request with: ', value)
+            alert.hide()
+            planet.search(value.trim())
         } else {
-            show('Enter user date!')
+            alert.show('Enter planet name!')
         }
     }
 
@@ -22,7 +27,7 @@ export const Search = () => {
             <input
                 type="text"
                 className="form-control"
-                placeholder="Enter nickname"
+                placeholder="Enter planet name"
                 onKeyPress={onSubmit}
                 value={value}
                 onChange={event => setValue(event.target.value)}

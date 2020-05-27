@@ -1,12 +1,11 @@
 import React from "react";
 import {NavLink} from 'react-router-dom';
+import './Navbar.css'
 
 export const Navbar = () => (
-    <nav className="navbar navbar-dark bg-primary navbar-expand-lg">
-        <div className="navbar-brand">
-            Github Search
-        </div>
-        <ul className="navbar-nav">
+    <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+        <img className="logo" src={require("../img/logo.png")} alt="Logo"/>
+        <ul className="navbar-nav ml-5">
             <li className="nav-item">
                 <NavLink exact to="/" className="nav-link">Main</NavLink>
             </li>
