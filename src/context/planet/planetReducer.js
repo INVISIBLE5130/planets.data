@@ -1,11 +1,9 @@
-import {ClearPlanet, GetPlanetDescription, GetPlanet, SearchPlanet, SetLoading} from "../Types";
+import {ClearPlanet, SearchPlanet, SetLoading} from "../Types";
 
 const handlers = {
-    [SearchPlanet]: (state, action) => ({...state, name: action.payload, loading: false}),
-    [GetPlanetDescription]: (state, {payload}) => ({...state, description: payload, loading: false}),
-    [GetPlanet]: (state, {payload}) => ({...state, name: payload, loading: false}),
+    [SearchPlanet]: (state, action) => ({...state, data: action.payload, loading: false}),
     [SetLoading]: state => ({...state, loading: true}),
-    [ClearPlanet]: state => ({...state, name: []}),
+    [ClearPlanet]: state => ({...state, data: []}),
     default: state => state
 }
 

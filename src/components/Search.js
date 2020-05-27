@@ -18,7 +18,7 @@ export const Search = () => {
             alert.hide()
             planet.search(value.trim())
         } else {
-            alert.show('Enter planet date!')
+            alert.show('Enter planet name!')
         }
     }
 

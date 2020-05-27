@@ -6,9 +6,12 @@ export const Card = ({element}) => (
         <div className="card-body">
             <h5 className="card-title">
                 {element.name}
-                {element.description}
             </h5>
-            <Link to={'/planet/' + element.name} className="btn btn-primary">Open</Link>
+
+            <h6>
+                {element.description}
+            </h6>
+            <Link to={'/planet/' + element.name} className="btn btn-dark">Open</Link>
         </div>
     </div>
 )

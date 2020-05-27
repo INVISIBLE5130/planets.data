@@ -9,13 +9,13 @@
             },
             "lengthOfYear": {
                 "value": 88,
-                "unit": "earth days"
+                "unit": "eаrth days"
             },
             "moons": {
                 "count": 0,
                 "list": []
             },
-            "description": "Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days",
+            "description": "Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Eаrth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Eаrth days",
             "equatorialRadius": {
                 "value": 2439.7,
                 "unit": "km"
@@ -37,7 +37,7 @@
             },
             "lengthOfYear": {
                 "value": 225,
-                "unit": "earth days"
+                "unit": "eаrth days"
             },
             "moons": {
                 "count": 0,
@@ -68,7 +68,7 @@
             },
             "lengthOfYear": {
                 "value": 365.25,
-                "unit": "earth days"
+                "unit": "eаrth days"
             },
             "moons": {
                 "count": 1,
@@ -99,7 +99,7 @@
             },
             "lengthOfYear": {
                 "value": 1.88,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 2,
@@ -134,7 +134,7 @@
             },
             "lengthOfYear": {
                 "value": 11.86,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 79,
@@ -145,7 +145,7 @@
                     "Callisto"
                 ]
             },
-            "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth.",
+            "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Eаrth.",
             "equatorialRadius": {
                 "value": 69911,
                 "unit": "km"
@@ -170,7 +170,7 @@
             },
             "lengthOfYear": {
                 "value": 29.45,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 82,
@@ -207,7 +207,7 @@
             },
             "lengthOfYear": {
                 "value": 84,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 27,
@@ -247,7 +247,7 @@
             },
             "lengthOfYear": {
                 "value": 164.81,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 14,
@@ -288,7 +288,7 @@
             },
             "lengthOfYear": {
                 "value": 248.89,
-                "unit": "earth years"
+                "unit": "eаrth years"
             },
             "moons": {
                 "count": 5,

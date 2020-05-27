@@ -1,7 +1,5 @@
 export const ShowAlert = 'Show Alert'
 export const HideAlert = 'Hide Alert'
 export const ClearPlanet = 'Clear Planet'
-export const GetPlanetDescription = 'Get Description'
-export const GetPlanet = 'Get Planet'
 export const SearchPlanet = 'Search Planet'
 export const SetLoading = 'Set Loading'
